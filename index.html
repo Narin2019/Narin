@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juwelier Narin Singen | Trauringe, Schmuck, Goldankauf</title>
+<meta name="description" content="Juwelier und Goldhandel Narin in Singen: Trauringe, Hochzeitsschmuck, Goldankauf und -verkauf, Münzen, Barren, Uhren und Reparaturen. Beratung auf Deutsch, Türkisch, Kurdisch, Arabisch, Französisch und Englisch.">
+<style>
+:root{
+  --bg:#021614; --flaeche:#04211e; --linie:rgba(201,170,100,.3);
+  --gold:#c9aa64; --gold-hell:#ecd9a8; --text:#e4dfd1; --gedaempft:#98aaa3; --hell:#f4f0e6;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:"Avenir Next",Avenir,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.75;font-size:1.04rem}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--hell);line-height:1.25;margin:0}
+h2{font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:1.6rem}
+.goldtext{background:linear-gradient(100deg,var(--gold-hell) 0%,var(--gold) 45%,#8f7438 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+header.nav{position:sticky;top:0;z-index:10;background:rgba(2,22,20,.96);border-bottom:1px solid var(--linie)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;padding-top:.8rem;padding-bottom:.8rem;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-size:1.15rem;letter-spacing:.35em;text-decoration:none;color:var(--gold)}
+.nav nav{display:flex;gap:1.6rem;font-size:.93rem;align-items:center}
+.nav nav a{text-decoration:none;color:var(--gedaempft)}
+.nav nav a:hover{color:var(--hell)}
+.nav nav a.tel{color:var(--gold)}
+.lang{display:flex;gap:.1rem}
+.lang button{background:none;border:0;border-bottom:1px solid transparent;color:var(--gedaempft);font:inherit;font-size:.85rem;padding:.2rem .5rem;cursor:pointer;letter-spacing:.05em}
+.lang button:hover{color:var(--hell)}
+.lang button[aria-pressed="true"]{color:var(--gold-hell);border-bottom-color:var(--gold)}
+@media(max-width:700px){.nav nav a:not(.tel){display:none}.lang{order:3;width:100%;justify-content:center}}
+
+.hero{background:radial-gradient(ellipse 70% 90% at 25% 45%,#0c443d 0%,#052b27 45%,var(--bg) 85%);border-bottom:1px solid var(--linie)}
+.hero .wrap{padding-top:clamp(4.5rem,12vw,8rem);padding-bottom:clamp(4rem,10vw,7rem)}
+.hero h1{font-size:clamp(3rem,10vw,6rem);font-weight:300;letter-spacing:.3em}
+.zier{display:flex;align-items:center;gap:.7rem;margin:1.2rem 0 1rem}
+.zier::before{content:"";width:64px;height:1px;background:var(--gold)}
+.zier::after{content:"";width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+.hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.45rem);color:var(--gold-hell);margin:0 0 1.4rem}
+.hero p{margin:0 0 2.2rem;max-width:30em}
+.btns{display:flex;flex-wrap:wrap;gap:.9rem}
+.btn{display:inline-block;padding:.8rem 1.7rem;text-decoration:none;border:1px solid var(--gold);font-size:.98rem;letter-spacing:.03em}
+.btn.fest{background:var(--gold);color:var(--bg);font-weight:600}
+.btn.fest:hover{background:var(--gold-hell);border-color:var(--gold-hell)}
+.btn.leer{color:var(--gold-hell)}
+.btn.leer:hover{background:rgba(201,170,100,.12)}
+
+section{padding:clamp(3.5rem,8vw,5.5rem) 0;border-bottom:1px solid var(--linie)}
+.liste{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 3rem}
+@media(max-width:860px){.liste{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.liste{grid-template-columns:1fr}}
+.liste li{padding:1.4rem 0 1.8rem;border-top:1px solid var(--linie)}
+.liste h3{font-size:1.3rem;margin-bottom:.4rem;color:var(--gold-hell)}
+.liste p{margin:0;color:var(--gedaempft);font-size:.98rem}
+
+.statement{text-align:center;background:var(--flaeche)}
+.statement q{display:block;max-width:22em;margin:0 auto;font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,4vw,2.5rem);line-height:1.35;quotes:"„" "“"}
+.statement span{display:block;width:60px;height:1px;background:var(--gold);margin:2rem auto 0}
+
+.gold .wrap{max-width:740px}
+.gold p{margin:0 0 1.1rem}
+.gold .btn{margin-top:.8rem}
+
+.sprachen{background:var(--flaeche)}
+.sprachen p{max-width:36em;color:var(--gedaempft);margin:0 0 1.2rem}
+.sprachen .sp{font-family:var(--serif);font-size:1.35rem;color:var(--gold-hell)}
+
+.besuch{border-bottom:0}
+.besuch .wrap{display:grid;gap:3rem;grid-template-columns:1fr 1fr}
+@media(max-width:760px){.besuch .wrap{grid-template-columns:1fr;gap:2rem}}
+.besuch h3{font-size:1.2rem;color:var(--gold);margin-bottom:.7rem}
+address{font-style:normal;margin-bottom:1.8rem}
+table{border-collapse:collapse;width:100%;max-width:350px}
+td{padding:.45rem 0;border-bottom:1px solid var(--linie)}
+td:last-child{text-align:end}
+.kontakt a{display:block;padding:.3rem 0;text-decoration:none}
+.kontakt a:hover{color:var(--gold-hell)}
+.kontakt a>span:first-child{display:inline-block;min-width:6.5rem;color:var(--gedaempft)}
+
+footer{padding:2rem 0;font-size:.9rem;color:var(--gedaempft);border-top:1px solid var(--linie);background:var(--flaeche)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer a{margin-inline-start:1rem}
+
+[dir="rtl"] .hero .sub,[dir="rtl"] .statement q{font-style:normal}
+[dir="rtl"] .btn,[dir="rtl"] .lang button{letter-spacing:0}
+[dir="rtl"] body{line-height:1.9}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">NARIN</a>
+    <nav aria-label="Menü">
+      <a href="#leistungen" data-i18n="nav_leist">Leistungen</a>
+      <a href="#goldankauf" data-i18n="nav_gold">Goldankauf</a>
+      <a href="#besuch" data-i18n="nav_besuch">Besuch</a>
+      <a class="tel" href="tel:+4977319019024">0049 7731 9019024</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Sprache">
+      <button type="button" data-lang="de" lang="de" title="Deutsch" aria-pressed="true">DE</button>
+      <button type="button" data-lang="tr" lang="tr" title="Türkçe" aria-pressed="false">TR</button>
+      <button type="button" data-lang="ku" lang="ku" title="Kurdî" aria-pressed="false">KU</button>
+      <button type="button" data-lang="ar" lang="ar" title="العربية" aria-pressed="false">AR</button>
+      <button type="button" data-lang="fr" lang="fr" title="Français" aria-pressed="false">FR</button>
+      <button type="button" data-lang="en" lang="en" title="English" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1 class="goldtext">NARIN</h1>
+      <div class="zier" aria-hidden="true"></div>
+      <div class="sub" data-i18n="hero_sub">Juwelier und Goldhandel in Singen</div>
+      <p data-i18n="hero_p">Trauringe, Hochzeitsschmuck, Gold und Silber. Wir beraten Sie persönlich, ehrlich und in Ihrer Sprache.</p>
+      <div class="btns">
+        <a class="btn fest" href="https://wa.me/4917623494610" data-i18n="btn_wa">Per WhatsApp schreiben</a>
+        <a class="btn leer" href="#besuch" data-i18n="btn_hours">Öffnungszeiten und Adresse</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="leistungen">
+    <div class="wrap">
+      <h2 data-i18n="h_leist">Leistungen</h2>
+      <ul class="liste">
+        <li><h3 data-i18n="l1h">Trauringe</h3><p data-i18n="l1p">Ringe aus Gold in verschiedenen Farben, nach Ihren Wünschen angepasst.</p></li>
+        <li><h3 data-i18n="l2h">Hochzeitsschmuck</h3><p data-i18n="l2p">Schmuck für Braut und Familie, von klassisch bis traditionell.</p></li>
+        <li><h3 data-i18n="l3h">Schmuck und Edelsteine</h3><p data-i18n="l3p">Ketten, Armbänder, Ringe und Ohrschmuck sowie Edelsteine.</p></li>
+        <li><h3 data-i18n="l4h">Uhren</h3><p data-i18n="l4p">Eine Auswahl an Uhren für jeden Anlass.</p></li>
+        <li><h3 data-i18n="l5h">Reparaturen und Anpassungen</h3><p data-i18n="l5p">Ringgrößen ändern, Verschlüsse reparieren, Lieblingsstücke wieder in Form bringen.</p></li>
+        <li><h3 data-i18n="l6h">Edelmetallhandel</h3><p data-i18n="l6p">Gold- und Silbermünzen sowie Barren, Ankauf und Verkauf.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div class="wrap">
+      <q data-i18n="quote">Schmuck begleitet die wichtigsten Momente im Leben.</q>
+      <span></span>
+    </div>
+  </section>
+
+  <section class="gold" id="goldankauf">
+    <div class="wrap">
+      <h2 data-i18n="h_gold">Goldankauf und Goldverkauf</h2>
+      <p data-i18n="g1">Sie möchten Altgold, Schmuck, Münzen oder Barren verkaufen? Wir prüfen Ihr Stück vor Ihren Augen und nennen Ihnen den Preis nach dem aktuellen Tageskurs.</p>
+      <p data-i18n="g2">Sie möchten Gold als Wertanlage kaufen? Wir beraten Sie zu Münzen und Barren.</p>
+      <p data-i18n="g3">Kommen Sie ohne Termin vorbei, oder schicken Sie uns vorab ein Foto Ihres Stücks.</p>
+      <a class="btn fest" href="https://wa.me/4917623494610" data-i18n="btn_foto">Foto per WhatsApp senden</a>
+    </div>
+  </section>
+
+  <section class="sprachen" id="sprachen">
+    <div class="wrap">
+      <h2 data-i18n="h_spr">Beratung in Ihrer Sprache</h2>
+      <p data-i18n="spr_p">Bei einer Entscheidung wie dem Trauring oder dem Verkauf von Gold sollen Sie alles verstehen.</p>
+      <div class="sp" dir="ltr">Deutsch, Türkçe, Kurdî, <span lang="ar" dir="rtl">العربية</span>, Français, English</div>
+    </div>
+  </section>
+
+  <section class="besuch" id="besuch">
+    <div class="wrap">
+      <div>
+        <h2 data-i18n="h_besuch">Besuch</h2>
+        <address>
+          Juwelier Narin<br>
+          Freiheitsstraße 12<br>
+          78224 Singen
+        </address>
+        <h3 data-i18n="hours_h">Öffnungszeiten</h3>
+        <table>
+          <tr><td data-i18n="d_mf">Montag bis Freitag</td><td data-i18n="t_mf">10:00 bis 18:00 Uhr</td></tr>
+          <tr><td data-i18n="d_sa">Samstag</td><td data-i18n="t_sa">10:00 bis 16:00 Uhr</td></tr>
+          <tr><td data-i18n="d_so">Sonntag</td><td data-i18n="t_so">geschlossen</td></tr>
+        </table>
+      </div>
+      <div class="kontakt">
+        <h3 data-i18n="contact_h">Kontakt</h3>
+        <a href="tel:+4977319019024"><span data-i18n="k_tel">Telefon</span> <bdi>0049 7731 9019024</bdi></a>
+        <a href="https://wa.me/4917623494610"><span>WhatsApp</span> <bdi>0049 176 23494610</bdi></a>
+        <a href="https://www.instagram.com/Juwelier_narin_singen" rel="noopener"><span>Instagram</span> <bdi>@Juwelier_narin_singen</bdi></a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Freiheitsstra%C3%9Fe+12+78224+Singen" rel="noopener"><span data-i18n="k_anf">Anfahrt</span> <span data-i18n="k_anf_v">In Google Maps öffnen</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Juwelier Narin, Singen</span>
+    <span><a href="impressum.html" data-i18n="f_imp">Impressum</a><a href="datenschutz.html" data-i18n="f_dat">Datenschutz</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var T={
+    tr:{nav_leist:"Hizmetler",nav_gold:"Altın alım satım",nav_besuch:"Ziyaret",
+      hero_sub:"Singen’de kuyumcu ve altın ticareti",
+      hero_p:"Alyans, gelin takıları, altın ve gümüş. Size kişisel, dürüst ve kendi dilinizde danışmanlık sunuyoruz.",
+      btn_wa:"WhatsApp’tan yazın",btn_hours:"Çalışma saatleri ve adres",h_leist:"Hizmetlerimiz",
+      l1h:"Alyanslar",l1p:"İsteğinize göre uyarlanan, farklı renklerde altın yüzükler.",
+      l2h:"Gelin takıları",l2p:"Gelin ve aile için klasikten geleneksele takılar.",
+      l3h:"Takı ve değerli taşlar",l3p:"Kolye, bileklik, yüzük, küpe ve değerli taşlar.",
+      l4h:"Saatler",l4p:"Her fırsata uygun saat seçenekleri.",
+      l5h:"Tamir ve ölçü ayarı",l5p:"Yüzük ölçüsü değiştirme, kopça tamiri, sevdiğiniz takıları yeniden eski haline getirme.",
+      l6h:"Değerli maden ticareti",l6p:"Altın ve gümüş sikkeler ile külçeler, alım ve satım.",
+      quote:"Takılar, hayatın en önemli anlarına eşlik eder.",
+      h_gold:"Altın alım ve satımı",
+      g1:"Eski altın, takı, sikke veya külçe mi satmak istiyorsunuz? Parçanızı gözünüzün önünde inceler, güncel günlük kura göre fiyatını söyleriz.",
+      g2:"Altını yatırım amacıyla mı almak istiyorsunuz? Sikke ve külçe konusunda size danışmanlık veriyoruz.",
+      g3:"Randevusuz uğrayabilir ya da önceden parçanızın fotoğrafını gönderebilirsiniz.",
+      btn_foto:"WhatsApp’tan fotoğraf gönderin",h_spr:"Kendi dilinizde danışmanlık",
+      spr_p:"Alyans seçimi ya da altın satışı gibi bir kararda her şeyi anlamanız gerekir.",
+      h_besuch:"Ziyaret",hours_h:"Çalışma saatleri",d_mf:"Pazartesi - Cuma",d_sa:"Cumartesi",d_so:"Pazar",
+      t_mf:"10:00 - 18:00",t_sa:"10:00 - 16:00",t_so:"kapalı",contact_h:"İletişim",k_tel:"Telefon",
+      k_anf:"Yol tarifi",k_anf_v:"Google Haritalar’da aç",f_imp:"Impressum",f_dat:"Veri koruma"},
+    ku:{nav_leist:"Xizmet",nav_gold:"Kirîn û firotina zêrê",nav_besuch:"Serdan",
+      hero_sub:"Zêrger û bazirganiya zêrê li Singenê",
+      hero_p:"Gustîlkên zewacê, zêrên bûkê, zêr û zîv. Em bi şêweyekî kesane, rast û bi zimanê we şîretan didin we.",
+      btn_wa:"Bi WhatsAppê binivîse",btn_hours:"Demjimêrên vekirinê û navnîşan",h_leist:"Xizmetên me",
+      l1h:"Gustîlkên zewacê",l1p:"Gustîlkên zêr bi rengên cuda, li gorî daxwaza we têne guncandin.",
+      l2h:"Zêrên bûkê",l2p:"Ji bo bûk û malbatê, ji klasîk heta kevneşopî.",
+      l3h:"Zêr û kevirên giranbiha",l3p:"Gerdan, bazin, gustîl, guhar û kevirên giranbiha.",
+      l4h:"Demjimêr",l4p:"Ji bo her minasebetê cûrbecûr demjimêr.",
+      l5h:"Tamîr û guncandin",l5p:"Guhertina pîvana gustîlkê, tamîra qefilan û vegerandina zêrên ku hez dikin.",
+      l6h:"Bazirganiya madenên giranbiha",l6p:"Pereyên zêr û zîv û şemşên zêr, kirîn û firotin.",
+      quote:"Zêrên xemilandinê di girîngtirîn kêliyên jiyanê de li kêleka me ne.",
+      h_gold:"Kirîn û firotina zêrê",
+      g1:"Ma hûn dixwazin zêrê kevn, gustîl û gerdan, pere an şemşên zêr bifiroşin? Em perçeya we li ber çavên we dikolin û li gorî buhayê rojane buha dikin.",
+      g2:"Ma hûn dixwazin zêrê wekî veberhênan bikirin? Em di derbarê pere û şemşan de şîretan didin we.",
+      g3:"Bêyî randevû werin, an jî berê wêneyekî perçeya xwe ji me re bişînin.",
+      btn_foto:"Wêneyê bi WhatsAppê bişîne",h_spr:"Şîret bi zimanê we",
+      spr_p:"Di biryarek wekî hilbijartina gustîlka zewacê an firotina zêrê de divê hûn her tiştî fêm bikin.",
+      h_besuch:"Serdan",hours_h:"Demjimêrên vekirinê",d_mf:"Duşemb heta Înê",d_sa:"Şemî",d_so:"Yekşem",
+      t_mf:"10:00 - 18:00",t_sa:"10:00 - 16:00",t_so:"girtî",contact_h:"Têkilî",k_tel:"Telefon",
+      k_anf:"Rêwerz",k_anf_v:"Di Google Mapsê de veke",f_imp:"Impressum",f_dat:"Parastina daneyan"},
+    ar:{nav_leist:"الخدمات",nav_gold:"شراء وبيع الذهب",nav_besuch:"زيارتنا",
+      hero_sub:"صائغ وتجارة الذهب في زينغن",
+      hero_p:"خواتم الزواج ومجوهرات العروس والذهب والفضة. نقدّم لكم استشارة شخصية وصادقة بلغتكم.",
+      btn_wa:"راسلونا عبر واتساب",btn_hours:"ساعات العمل والعنوان",h_leist:"خدماتنا",
+      l1h:"خواتم الزواج",l1p:"خواتم من الذهب بألوان مختلفة، تُفصَّل حسب رغبتكم.",
+      l2h:"مجوهرات العروس",l2p:"مجوهرات للعروس والعائلة، من الكلاسيكي إلى التقليدي.",
+      l3h:"المجوهرات والأحجار الكريمة",l3p:"قلائد وأساور وخواتم وأقراط وأحجار كريمة.",
+      l4h:"الساعات",l4p:"تشكيلة من الساعات لكل مناسبة.",
+      l5h:"التصليح والتعديل",l5p:"تعديل مقاس الخواتم، إصلاح الإقفال، وإعادة قطعكم المفضلة إلى حالتها.",
+      l6h:"تجارة المعادن الثمينة",l6p:"عملات وسبائك من الذهب والفضة، شراء وبيع.",
+      quote:"المجوهرات ترافق أهم لحظات الحياة.",
+      h_gold:"شراء وبيع الذهب",
+      g1:"هل ترغبون في بيع ذهب قديم أو مجوهرات أو عملات أو سبائك؟ نفحص قطعتكم أمام أعينكم ونذكر لكم السعر حسب سعر اليوم.",
+      g2:"هل ترغبون في شراء الذهب كاستثمار؟ نقدّم لكم الاستشارة حول العملات والسبائك.",
+      g3:"يمكنكم زيارتنا دون موعد، أو إرسال صورة للقطعة مسبقاً.",
+      btn_foto:"أرسلوا صورة عبر واتساب",h_spr:"استشارة بلغتكم",
+      spr_p:"في قرار مثل اختيار خاتم الزواج أو بيع الذهب، من حقكم أن تفهموا كل شيء.",
+      h_besuch:"زيارتنا",hours_h:"ساعات العمل",d_mf:"من الاثنين إلى الجمعة",d_sa:"السبت",d_so:"الأحد",
+      t_mf:"10:00 - 18:00",t_sa:"10:00 - 16:00",t_so:"مغلق",contact_h:"التواصل",k_tel:"الهاتف",
+      k_anf:"الاتجاهات",k_anf_v:"افتح في خرائط Google",f_imp:"البيانات القانونية (Impressum)",f_dat:"حماية البيانات"},
+    fr:{nav_leist:"Services",nav_gold:"Rachat d’or",nav_besuch:"Nous rendre visite",
+      hero_sub:"Bijoutier et négoce d’or à Singen",
+      hero_p:"Alliances, bijoux de mariage, or et argent. Nous vous conseillons personnellement, honnêtement et dans votre langue.",
+      btn_wa:"Écrire sur WhatsApp",btn_hours:"Horaires et adresse",h_leist:"Nos services",
+      l1h:"Alliances",l1p:"Alliances en or de différentes couleurs, adaptées à vos souhaits.",
+      l2h:"Bijoux de mariage",l2p:"Bijoux pour la mariée et la famille, du classique au traditionnel.",
+      l3h:"Bijoux et pierres précieuses",l3p:"Colliers, bracelets, bagues, boucles d’oreilles et pierres précieuses.",
+      l4h:"Montres",l4p:"Une sélection de montres pour chaque occasion.",
+      l5h:"Réparations et retouches",l5p:"Ajustement de la taille des bagues, réparation de fermoirs, remise en état de vos bijoux préférés.",
+      l6h:"Négoce de métaux précieux",l6p:"Pièces et lingots d’or et d’argent, achat et vente.",
+      quote:"Les bijoux accompagnent les moments les plus importants de la vie.",
+      h_gold:"Rachat et vente d’or",
+      g1:"Vous souhaitez vendre de l’or ancien, des bijoux, des pièces ou des lingots ? Nous examinons votre pièce devant vous et vous indiquons le prix selon le cours du jour.",
+      g2:"Vous souhaitez acheter de l’or comme placement ? Nous vous conseillons sur les pièces et les lingots.",
+      g3:"Venez sans rendez-vous, ou envoyez-nous au préalable une photo de votre pièce.",
+      btn_foto:"Envoyer une photo sur WhatsApp",h_spr:"Conseil dans votre langue",
+      spr_p:"Pour une décision comme le choix d’une alliance ou la vente d’or, vous devez tout comprendre.",
+      h_besuch:"Nous rendre visite",hours_h:"Horaires d’ouverture",d_mf:"Lundi au vendredi",d_sa:"Samedi",d_so:"Dimanche",
+      t_mf:"10:00 - 18:00",t_sa:"10:00 - 16:00",t_so:"fermé",contact_h:"Contact",k_tel:"Téléphone",
+      k_anf:"Itinéraire",k_anf_v:"Ouvrir dans Google Maps",f_imp:"Mentions légales (Impressum)",f_dat:"Confidentialité"},
+    en:{nav_leist:"Services",nav_gold:"Gold buying",nav_besuch:"Visit",
+      hero_sub:"Jeweller and gold dealer in Singen",
+      hero_p:"Wedding rings, bridal jewellery, gold and silver. Personal, honest advice in your language.",
+      btn_wa:"Message us on WhatsApp",btn_hours:"Opening hours and address",h_leist:"Services",
+      l1h:"Wedding rings",l1p:"Gold rings in different colours, tailored to your wishes.",
+      l2h:"Bridal jewellery",l2p:"Jewellery for the bride and family, from classic to traditional.",
+      l3h:"Jewellery and gemstones",l3p:"Necklaces, bracelets, rings, earrings and gemstones.",
+      l4h:"Watches",l4p:"A selection of watches for every occasion.",
+      l5h:"Repairs and resizing",l5p:"Ring resizing, clasp repairs, and restoring your favourite pieces.",
+      l6h:"Precious metals trading",l6p:"Gold and silver coins and bars, buying and selling.",
+      quote:"Jewellery accompanies life’s most important moments.",
+      h_gold:"Gold buying and selling",
+      g1:"Would you like to sell old gold, jewellery, coins or bars? We examine your piece in front of you and quote a price based on the current daily rate.",
+      g2:"Would you like to buy gold as an investment? We advise you on coins and bars.",
+      g3:"Drop by without an appointment, or send us a photo of your piece beforehand.",
+      btn_foto:"Send a photo on WhatsApp",h_spr:"Advice in your language",
+      spr_p:"For a decision like choosing a wedding ring or selling gold, you should understand everything.",
+      h_besuch:"Visit",hours_h:"Opening hours",d_mf:"Monday to Friday",d_sa:"Saturday",d_so:"Sunday",
+      t_mf:"10 am - 6 pm",t_sa:"10 am - 4 pm",t_so:"closed",contact_h:"Contact",k_tel:"Phone",
+      k_anf:"Directions",k_anf_v:"Open in Google Maps",f_imp:"Legal notice (Impressum)",f_dat:"Privacy"}
+  };
+  var els=[].slice.call(document.querySelectorAll("[data-i18n]"));
+  T.de={};
+  els.forEach(function(e){T.de[e.getAttribute("data-i18n")]=e.textContent;});
+  var btns=[].slice.call(document.querySelectorAll(".lang button"));
+  function setLang(l){
+    var d=T[l]; if(!d) return;
+    els.forEach(function(e){var v=d[e.getAttribute("data-i18n")]; if(v!==undefined) e.textContent=v;});
+    document.documentElement.lang=l;
+    document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+    btns.forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-lang")===l?"true":"false");});
+    try{localStorage.setItem("narin-lang",l);}catch(x){}
+  }
+  btns.forEach(function(b){b.addEventListener("click",function(){setLang(b.getAttribute("data-lang"));});});
+  try{var s=localStorage.getItem("narin-lang"); if(s&&s!=="de") setLang(s);}catch(x){}
+})();
+</script>
+</body>
+</html>
